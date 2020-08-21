@@ -1,0 +1,21 @@
+﻿<Window x:Class="VeterinariaT1.Vista.Accesorios2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VeterinariaT1.Vista"
+        mc:Ignorable="d"
+        Title="Accesorios Disponibles" Height="220" Width="500">
+    <Grid>
+        <Canvas Background="Red">
+            <DataGrid x:Name="dtgLista" Canvas.Left="35" Canvas.Top="56" AutoGenerateColumns="False" Height="103" Width="421" SelectionChanged="dtgLista_SelectionChanged" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Código" Binding="{Binding Id}"/>
+                    <DataGridTextColumn Header="Producto" Binding="{Binding Producto}"/>
+                    <DataGridTextColumn Header="Precio" Binding="{Binding Precio}"/>
+                    <DataGridTextColumn Header="Descripcion" Binding="{Binding Descripcion}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Canvas>
+    </Grid>
+</Window>

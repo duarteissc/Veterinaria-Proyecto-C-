@@ -1,0 +1,16 @@
+﻿<Window x:Class="VeterinariaT1.Vista.Cantidad"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VeterinariaT1.Vista"
+        mc:Ignorable="d"
+        Title="Cantidad" Height="237.5" Width="300">
+    <Grid>
+        <Canvas Background="Gray">
+            <Label Content="Ingrese Cantidad Deseada:" Background="LightSeaGreen" HorizontalAlignment="Left" VerticalAlignment="Top" Width="211" Canvas.Left="57" Canvas.Top="71" FontWeight="Bold"/>
+            <TextBox x:Name="Pru" Background="Snow" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100" Canvas.Left="106" Canvas.Top="114"/>
+            <Button Content="Confimar" Background="Beige" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70"  Canvas.Left="119" Canvas.Top="153" Click="Button_Click" FontWeight="Bold"/>
+        </Canvas>
+    </Grid>
+</Window>
